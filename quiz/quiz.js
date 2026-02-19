@@ -1,38 +1,92 @@
 const questions = [
     {
-        question: "Comment je m'appelle ?",
+        question: "Qui est le personnage principal dans Assassin’s Creed Unity ?",
         reponses: [
-            { text: "obed", correct: false},
-            { text: "vico", correct: false},
-            { text: "exauce", correct: false},
-            { text: "vincent", correct: true}
+            { text: "Ezio Auditore", correct: false},
+            { text: "Edward Kenway", correct: false},
+            { text: "Connor", correct: false},
+            { text: "Arno Dorian", correct: true}
         ]
     },
     {
-        question: "Comment je m'appelle ?",
+        question: "Dans quelle ville se déroule principalement le jeu ?",
         reponses: [
-            { text: "obed", correct: false},
-            { text: "vico", correct: true},
-            { text: "exauce", correct: false},
-            { text: "vincent", correct: false}
+            { text: "Londres", correct: false},
+            { text: "Paris", correct: true},
+            { text: "Berlin", correct: false},
+            { text: "Rome", correct: false}
         ]  
     },
     {
-        question: "Comment je m'appelle ?",
+        question: "À quelle période historique se déroule le jeu ?",
         reponses: [
-            { text: "obed", correct: false},
-            { text: "vico", correct: false},
-            { text: "exauce", correct: true},
-            { text: "vincent", correct: false}
+            { text: "Moyen Âge", correct: false},
+            { text: "Première Guerre Mondiale", correct: false},
+            { text: "Révolution française", correct: true},
+            { text: "Rennaissance italienne", correct: false}
         ]
     },
     {
-        question: "Comment je m'appelle ?",
+        question: "Qui est l’ennemie principale d’Arno au début du jeu ?",
         reponses: [
-            { text: "obed", correct: true},
-            { text: "vico", correct: false},
-            { text: "exauce", correct: false},
-            { text: "vincent", correct: false}
+            { text: "Germain", correct: true},
+            { text: "Cesare Borgia", correct: false},
+            { text: "Haytham Kenway", correct: false},
+            { text: "Shay", correct: false}
+        ]  
+    },
+    {
+        question: "Quel est le nom de l’Ordre ennemi des Assassins ?",
+        reponses: [
+            { text: "Les Chevaliers", correct: false},
+            { text: "Les Templiers", correct: true},
+            { text: "Les Anciens", correct: false},
+            { text: "Les Gardiens", correct: false}
+        ]
+    },
+    {
+        question: "Quel est le nom du père adoptif d’Arno ?",
+        reponses: [
+            { text: "François de la Serre", correct: true},
+            { text: "Pierre Bellec", correct: false},
+            { text: "Napoléon Bonaparte", correct: false},
+            { text: "Charles Dorian", correct: false}
+        ]  
+    },
+    {
+        question: "Quelle nouveauté importante apparaît dans Unity ?",
+        reponses: [
+            { text: "Les Combats navals", correct: false},
+            { text: "Les armes futuristes", correct: false},
+            { text: "Le mode coopératif en ligne", correct: true},
+            { text: "Les pouvoirs magiques", correct: false}
+        ]
+    },
+    {
+        question: "Quelle arme est emblématique des Assassins dans Unity ?",
+        reponses: [
+            { text: "La Lame secrète", correct: true},
+            { text: "La Lance", correct: false},
+            { text: "Le Fusil", correct: false},
+            { text: "Le Marteau", correct: false}
+        ]  
+    },
+    {
+        question: "Quel bâtiment célèbre peut-on escalader dans le jeu ?",
+        reponses: [
+            { text: "La tour de londres", correct: false},
+            { text: "Le Colisée", correct: false},
+            { text: "Notre-Dame de Paris", correct: true},
+            { text: "La Tour Eiffel", correct: false}
+        ]
+    },
+    {
+        question: "Qui est l’éditeur du jeu Assassin’s Creed Unity ?",
+        reponses: [
+            { text: "Ubistor", correct: true},
+            { text: "Rockstar", correct: false},
+            { text: "Activision", correct: false},
+            { text: "EA", correct: false}
         ]  
     }
 ];
@@ -129,3 +183,4 @@ homeButton.addEventListener("click", () => {
 });
 
 startQuiz();
+

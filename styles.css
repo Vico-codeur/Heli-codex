@@ -152,7 +152,7 @@ header .burger-menu .nav-links .buttons-burger-menu a {
         display: block;
     }
 
-    header .logo-img img{
+   header .logo-img a img{
         display: block;
     }
 
@@ -530,7 +530,7 @@ header .burger-menu .nav-links .buttons-burger-menu a {
 
 .details h3{
     font-family: 'Crimson Pro', serif;
-    font-size: 26px;
+    font-size: 1rem;
     font-weight: 700;
     text-align: left;
     line-height: 44px;
@@ -543,8 +543,7 @@ header .burger-menu .nav-links .buttons-burger-menu a {
 
 .details p{
     font-family: 'Crimson Pro', serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 0.9rem;
     text-align: left;
     line-height: 33px;
     text-align: left;
@@ -724,4 +723,137 @@ footer .droits {
     padding: 20px;
     color: #aaa;
     font-size: 14px;
+}
+
+
+
+
+
+/* test */
+
+@media (max-width: 430px) {
+
+    header {
+        padding: 15px 20px;
+        height: 65px;
+    }
+    header .logo-img a img{
+        display: block;
+    }
+
+    .slider {
+        height: 100vh;
+    }
+
+    .slider .list .item .content {
+        left: 5%;
+        top: 40%;
+        width: 90%;
+    }
+
+    .slider .list .item .content h2 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .slider .list .item .content p {
+        font-size: 1rem;
+    }
+
+    .mini-carte {
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .mini-carte .item {
+        width: 110px;
+        height: 180px;
+    }
+
+    .arrows {
+        right: 10px;
+        top: 80%;
+    }
+
+    .content-about {
+        padding: 30px 5%;
+    }
+
+    .content-about h2 {
+        font-size: 2rem;
+    }
+
+    .content-about .container-about {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .content-about .container-about img {
+        position: relative;
+        width: 100%;
+        right: 0;
+        left: 0;
+        margin-top: 15px;
+    }
+
+    .content-about .container-about .text-about {
+        width: 100%;
+        height: auto;
+        margin-left: 0 !important;
+        padding: 20px;
+    }
+
+    .content-about .container-about .text-about h3 {
+        font-size: 1.6rem;
+    }
+
+    .content-about .container-about .text-about p {
+        font-size: 1.1rem;
+    }
+
+    .slider-container {
+        height: auto;
+        padding: 60px 10px;
+        overflow-x: scroll;
+    }
+    .slider-container .slider-imgs h2{
+        display: none;
+    }
+
+    .slider-imgs {
+        width: max-content;
+        gap: 15px;
+    }
+
+    .slider-img {
+        width: 80vw;
+        height: 300px !important;
+    }
+
+    .slider-img.active {
+        width: 80vw !important;
+    }
+
+    .details h3,
+    .details p {
+        font-size: 0.8rem;
+    }
+
+    footer img {
+        width: 60%;
+    }
+
+    footer .cond {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer .cond img {
+        width: 60px;
+        height: auto;
+    }
 }

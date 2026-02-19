@@ -97,7 +97,7 @@ const acceptBtn = document.getElementById("accept-cookies");
 const refuseBtn = document.getElementById("refuse-cookies");
 
 // 🔧 MODE TEST
-const DEV_MODE = true;
+
 
 if (DEV_MODE) {
   localStorage.removeItem("cookieChoice");

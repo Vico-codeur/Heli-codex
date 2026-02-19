@@ -23,7 +23,8 @@ body{
     color: #001e4d;
     font-weight: 600;
     border: 1px solid #333;
-    padding-bottom: 30px;
+    padding: 5px 15px 15px 10px;
+    border-radius: 10px;
 }
 
 .quiz{
@@ -95,5 +96,4 @@ body{
 .incorrect{
     background: #ff9393;
 }
-
 
