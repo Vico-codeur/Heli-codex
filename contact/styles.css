@@ -1,40 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Outfit';
-    background: #fff;    
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
     background-image: url(img/fantasy-group-adventurers.jpg);
     background-size: cover;
+    background-position: center;
     backdrop-filter: blur(15px);
 }
 
-.contact-container{
-    width: 100vw;
-    height: 100vh;
+
+.contact-container {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
 }
 
-.contact-left{
+
+.contact-left {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 20px;
+    max-width: 500px;
+    width: 100%;
 }
 
-.contact-left .contact-tittle h2{
-  font-weight: 600;
-  color: #020024;
-  font-size: 2rem;
-  margin-bottom: 5px;
+
+.contact-left .contact-tittle h2 {
+    font-weight: 600;
+    color: #020024;
+    font-size: 2rem;
 }
 
-.contact-left-tittle hr{
+.contact-left-tittle hr {
     border: none;
     width: 120px;
     height: 5px;
@@ -43,8 +51,10 @@ body{
     margin-bottom: 20px;
 }
 
-.contact-input{
-    width: 400px;
+
+.contact-input {
+    width: 100%;
+    max-width: 400px;
     height: 50px;
     border: none;
     outline: none;
@@ -52,25 +62,33 @@ body{
     font-weight: 500;
     color: #667;
     border-radius: 50px;
+    transition: border 0.3s;
 }
 
-.contact-left textarea{
+.contact-left textarea {
+    width: 100%;
+    max-width: 400px;
     height: 150px;
     padding: 15px;
     border-radius: 20px;
+    resize: vertical;
 }
 
-.contact-input:focus{
+.contact-input:focus,
+.contact-left textarea:focus {
     border: 2px solid #ff994f;
 }
 
-.contact-input::placeholder{
+.contact-input::placeholder,
+.contact-left textarea::placeholder {
     color: #a9a9a9;
 }
 
-.contact-left button{
+
+.contact-left button {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 15px 30px;
     font-size: 16px;
     color: #fff;
@@ -78,34 +96,95 @@ body{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    background: #020024;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(28, 59, 85, 1) 88%);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.contact-left button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 
 #btn-home {
-  display: block;             
-  margin: 30px auto 0;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #1f2933, #3b82f6);
-  border: none;
-  text-decoration: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #1f2933, #3b82f6);
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
 }
 
 #btn-home:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
-  filter: brightness(1.1);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.1);
 }
 
 #btn-home:active {
-  transform: translateY(0) scale(0.98);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    .contact-container {
+        gap: 30px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .contact-left {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-left .contact-tittle h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-left-tittle hr {
+        width: 80px;
+    }
+
+    .contact-input,
+    .contact-left textarea {
+        max-width: 100%;
+    }
+
+    #btn-home {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-left .contact-tittle h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-left-tittle hr {
+        width: 60px;
+    }
+
+    .contact-left button {
+        width: 100%;
+        justify-content: center;
+    }
 }

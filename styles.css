@@ -337,6 +337,7 @@ header .burger-menu .nav-links .buttons-burger-menu a {
 .mini-carte .item .content{
     position: absolute;
     inset: auto;
+    display: none;
 }
 
 @media screen and (max-width: 678px) {
@@ -766,6 +767,9 @@ footer .droits {
         width: 100%;
         padding: 0 10px;
         gap: 10px;
+    }
+    .arrows{
+        display: none;
     }
 
     .mini-carte .item {
